@@ -1,4 +1,3 @@
-import daisyui from 'daisyui';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -9,10 +8,6 @@ const config: Config = {
   ],
   darkMode: 'class',
   theme: {},
-  plugins: [require('@tailwindcss/typography'), daisyui], // eslint-disable-line @typescript-eslint/no-require-imports
-  daisyui: {
-    themes: ['light'],
-    logs: false,
-  },
+  plugins: [require('@tailwindcss/typography')], // eslint-disable-line @typescript-eslint/no-require-imports
 };
 export default config;

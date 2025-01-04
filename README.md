@@ -14,12 +14,11 @@ Open [http://localhost:8000](http://localhost:8000) with your browser to see the
 
 ### Folder Structure
 
-src/ 
-  api/
-  app/
-  components/
-  data/
-  hooks/
-  lib/
-  providers/
-  types/
+* app/
+    * api/
+    * components/
+* data/
+* hooks/
+* lib/
+* providers/
+* types/

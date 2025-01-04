@@ -1,6 +1,8 @@
+import { Button } from '@/components/Button';
+
 export default function Home() {
   return (
-    <div>
+    <div className='prose'>
       <h1>NextJS Starter Template</h1>
       <h3>
         Author:{' '}
@@ -12,6 +14,7 @@ export default function Home() {
           Andre L Gomes
         </a>
       </h3>
+      <Button text='Button' />
     </div>
   );
 }

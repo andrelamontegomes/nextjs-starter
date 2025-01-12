@@ -49,10 +49,7 @@ export default function Contact() {
               rows={6}
             />
 
-            <Button
-              text='Send Message'
-              type='submit'
-            />
+            <Button text='Send Message' />
           </form>
         </div>
 

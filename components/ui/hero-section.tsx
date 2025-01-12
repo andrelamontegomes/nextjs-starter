@@ -1,3 +1,5 @@
+import { Button } from '@/components/button';
+
 export const HeroSection = () => {
   return (
     <div className='hero bg-base-200 py-12'>
@@ -8,7 +10,7 @@ export const HeroSection = () => {
             A modern, responsive template built with NextJS, TypeScript, and TailwindCSS. Start
             building your next project with confidence.
           </p>
-          <button className='btn btn-primary'>Get Started</button>
+          <Button text='Get Started' />
         </div>
       </div>
     </div>

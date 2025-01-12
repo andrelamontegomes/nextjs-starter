@@ -1,34 +1,26 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
+import { Inter } from 'next/font/google';
 
 import './globals.css';
 
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900',
-});
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900',
-});
+import { Footer } from '@/components/footer';
+import { Header } from '@/components/header';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'NextJS Starter',
-  description: '',
+  title: 'Next.js Template',
+  description: 'A modern Next.js template with TypeScript and Tailwind CSS',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className='flex h-screen flex-col overflow-hidden'>
-          <main className=''>{children}</main>
+      <body className={inter.className}>
+        <div className='flex min-h-screen flex-col'>
+          <Header />
+          <main className='flex-grow'>{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
